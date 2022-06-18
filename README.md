@@ -37,7 +37,9 @@ $cd /mnt
 
                                     
 $./rfid -w block_address
+
 e.g:
+
 $./rfid -d /dev/spidev1.0 -w 4 FF0AFF
 
 spi mode: 0
@@ -59,8 +61,11 @@ max speed: 10000 Hz (10 KHz)
     0x0d, 0x0e, 0x0f, 0x10, 
 
 $./rfid -r block_address
+
 e.g:
+
 $./rfid -d /dev/spidev1.0 -r 4
+
 spi mode: 0
 bits per word: 8
 max speed: 10000 Hz (10 KHz)
@@ -79,7 +84,9 @@ max speed: 10000 Hz (10 KHz)
     0x0d, 0x0e, 0x0f, 0x10, 
 
 $./rfid -r uid
+
 e.g:
+
 $./rfid -d /dev/spidev1.0 --id
 
 4、联系方式
