@@ -606,7 +606,8 @@ int rfid_halt (void)
     calulatate_crc(com_buf, 2, &com_buf[2]);
 
     status = rfid_com(PCD_TRANSCEIVE, com_buf, 4, com_buf, &len_bit);
-
+    //printf("HLT status: %d\n", status);
+    status = MI_OK;
     return status;
 } /* ----- End of rfid_halt()  ----- */
 
@@ -720,5 +721,4 @@ void rfid_init (int rfid_fd)
         pabort("can't config iso type");
     }
 } /* ----- End of rfid_init()  ----- */
-
 
