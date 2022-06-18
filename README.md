@@ -1,4 +1,5 @@
 
+For Olimex A20-Micro olinuxino Debian 8
 1、概要
 
 这个工程是开源的，希望对大家的使用有帮助;
