@@ -18,7 +18,7 @@
 #include <sys/ioctl.h>
 #include <linux/types.h>
 
-#include "rc522.h"
+#include "../rc522/rc522.h"
 
 /* 
  * Sector password: A, Number of sectors: 16, Each sector

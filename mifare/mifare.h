@@ -16,6 +16,7 @@
 
 #define MI_READ 0x01
 #define MI_WRITE 0x02
+#define MI_GET_ID 0x04
 
 
 void block_write (unsigned char block_addr);

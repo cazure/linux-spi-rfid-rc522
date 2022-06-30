@@ -18,7 +18,7 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <linux/types.h>
-#include <linux/spi/spidev.h>
+#include "spidev.h"
 
 #include "spi.h"
 
@@ -78,7 +78,7 @@ void spi_init (int fd, unsigned char mode, unsigned char bits, unsigned int spee
     {
         printf("can't get max speed hz\n");
     }
-
+    /*
     printf ("\033[36m\033[4m"
             "                                     \n");
     printf ("\033[0m\033[36m\n");
@@ -88,6 +88,6 @@ void spi_init (int fd, unsigned char mode, unsigned char bits, unsigned int spee
     printf ("\033[0m\033[36m\033[4m"
             "                                     \n");
     printf ("\033[0m\n");
+    */
 
 } /* ----- End of spi_init()  ----- */
-
